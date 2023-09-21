@@ -1,0 +1,133 @@
+.container {
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  height: 118px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 2px 12px 12px 1px rgba(197, 197, 197, 0.2);
+}
+
+.header .headerContent .logo {
+  width: 178px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.header .headerContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  /* justify-content: space-between; */
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.first .a1 {
+  text-decoration: none;
+  color: #211f54;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px; /* 166.7% */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 390px; */
+  width: 1008px;
+  justify-content: space-between;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.second .btn1 {
+  text-decoration: none;
+  color: #211f54;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px; /* 166.7% */
+}
+.second .btn2 {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 54px;
+  border-radius: 14px;
+  background: #0075ff;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* //////////////// */
+@media (max-width: 992px) {
+  .header .headerContent {
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 352px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 332px;
+  }
+}
+
+/* @media (max-width: 950px) {
+  .header .headerContent {
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+  }
+  /* .menu img {
+    width: 40px;
+    height: 40px;
+  } */
+/* } */
+/* @media (min-width: 950px) {
+  .menu {
+    display: none;
+  }
+} */
